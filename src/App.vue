@@ -1,28 +1,39 @@
+
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <navbarComponent></navbarComponent>
+    <breadComponent></breadComponent>
+    <galleyComponent></galleyComponent>
+    <SliderComponent></SliderComponent>
+    <footerComponent></footerComponent>
+    <copyrightCmp></copyrightCmp>
+
   </div>
+
 </template>
 
+
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import navbarComponent from "./components/navbarComponent.vue";
+import breadComponent from "./components/breadcrumtComponent.vue";
+import galleyComponent from "./components/galleyComponent.vue";
+import SliderComponent from "./components/sliderComponent.vue";
+import footerComponent from "./components/footerComponent.vue";
+import copyrightCmp from "./components/copyrightComponent.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
+    navbarComponent,
+    breadComponent,
+    galleyComponent,
+    SliderComponent,
+    footerComponent,
+    copyrightCmp
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
